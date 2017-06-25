@@ -1,5 +1,56 @@
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+h3, h5 {
+  text-align: center;
+}
+
+h4 {
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+#add-gif, form {
+display: flex;
+justify-content: center;
+margin-left: 20px;
+margin-right: 20px;
+}
+
 .imageDiv{
   display: inline-block;
   text-align: center;
   margin: 5px;
+}
+
+.jumbotron, h1{
+  background-color: #b3e6ff;
+  font-size: 10px;
+  color: #ffd633;
+  text-align: center;
+  text-shadow: 1px 1px black;
+  border: 0px;
+  margin: 0px;
+}
+
+#buttonsHere {
+  text-align: center;
+  margin: 30px;
+}
+
+#addButton {
+  text-align: center;
+}
+.container{
+  min-height: 500px;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  width: auto;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #ff6600 , #ffff66); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #ff6600, #ffff66); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #ff6600, #ffff66); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ff6600 , #ffff66); /* Standard syntax */
 }

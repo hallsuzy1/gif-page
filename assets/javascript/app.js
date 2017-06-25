@@ -1,6 +1,6 @@
 
 // array with button names for initial gif buttons
-var summerButtons = ["Summer", "Vacation", "Sun", "suzy"];
+var summerButtons = ["Summer", "Vacation", "Sun", "BBQ"];
 
 // Function for displaying new gif buttons
 function renderButtons() {
@@ -40,9 +40,6 @@ $("#add-gif").on("click", function(event) {
 });
 
 
-
-// $("button").on("click", function() {
-
   function displayGifInfo() {
 
   var summerThing = $(this).attr("data-text");
@@ -59,7 +56,7 @@ $.ajax({
   var results = response.data;
   console.log(response);
 
-  
+
   for(var i = 0; i < 10; i++) {
     var newDiv = $("<div class = imageDiv>");
 
