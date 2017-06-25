@@ -13,7 +13,7 @@ function renderButtons() {
     // dynamicaly generating buttons for each item in the array
     var a = $("<button>");
     a.attr("class", "btn btn-success btn-lg gifTitle");
-    a.attr("data-name", summerButtons[i]);
+    a.attr("data-text", summerButtons[i]);
     a.text(summerButtons[i]);
     $("#buttonsHere").append(a);
   }
@@ -41,7 +41,9 @@ $("#add-gif").on("click", function(event) {
 
 
 
-$("button").on("click", function() {
+// $("button").on("click", function() {
+
+  function displayGifInfo() {
 
   var summerThing = $(this).attr("data-text");
   console.log(summerThing);
@@ -57,7 +59,7 @@ $.ajax({
   var results = response.data;
   console.log(response);
 
-
+  
   for(var i = 0; i < 10; i++) {
     var newDiv = $("<div class = imageDiv>");
 
@@ -98,7 +100,8 @@ $.ajax({
 
   });
 
-});
-
+};
+    // adding click event listener to all elements with class "gifTitle"
+    $(document).on("click", ".gifTitle", displayGifInfo);
 
     renderButtons();
